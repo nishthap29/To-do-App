@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>My To-do App</title>
+<link rel="stylesheet" type="css/text" href="..\css\bootstrap.css">
+<link rel="stylesheet" type="css/text" href="..\css\bootstrap.min.css">
+<link rel="stylesheet" type="css/text" href="..\css\bootstrap-responsive.css">
+<link rel="stylesheet" type="css/text" href="..\css\bootstrap-responsive.min.css">
+<link rel="stylesheet" type="text/css" href="..\css\style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<div id="head-div">
+	<div id="h2-div">
+		<h2>My To-do App</h2>
+	</div>
+
+	<div>
+	<div id="myform">
+		<div id="text-div">
+			<input class="input-medium search-query box-shadow" id="mytxtbox" placeholder="  What you want to do?" name="nm">
+		</div>
+		<p id="p1">Hello</p>
+		
+		<div class="main-div">
+
+			<div class="btn-div">
+				<ol>
+					<li><button class="btn btn-primary" id="all"> All </button></li>
+					<li><button class="btn btn-success">Completed</button></li>
+					<li><button class="btn btn-warning">Pending</button></li>
+				</ol>
+			</div>
+
+			<div id="chk-div">
+				<div class="chk-div checkbox">
+					<div class="bottom"><input type="checkbox" id="sAll"><span>Select/deselect All</span><i class="glyphicon glyphicon-remove-circle"></i></div>
+					<div class="bottom"><input type="checkbox" class="chk"><span>Take care of garden</span></div>
+					<div class="bottom"><input type="checkbox" class="chk"><span>Get a good job</span></div>
+					<div class="bottom"><input type="checkbox" class="chk"><span>Go to gym</span></div>
+					<div class="bottom"><input type="checkbox" class="chk"><span>Improve my programming skills</span></div>
+				</div>
+	
+				<div class="com_btn">
+					<button class="btn btn-primary">Remove completed</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript" src="..\js\script.js"></script>
+
+</body>
+</html>

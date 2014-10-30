@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><HEAD><TITLE>Title</TITLE></HEAD><BODY>
+(click on "check all" button, after, uncheck a chk, and click again on "check all", it don't seem to check the manual unchecked checkbox..)<BR/>
+<INPUT type="button" value="Check all" onclick="checkall();"/>
+<DIV id="checkboxs">
+<INPUT type="checkbox"/>Chk1
+<INPUT type="checkbox"/>Chk2
+<INPUT type="checkbox"/>Chk3
+</DIV>
+<SCRIPT type="text/javascript">
+function checkall() {
+  inputs = document.getElementById('checkboxs').getElementsByTagName('input');
+  var i;
+  for (i=0;i&lt;inputs.length;i++) {
+    inputs[i].setAttribute('checked',true);
+    //inputs[i].checked=true; //With this way to check, no bugs, all work as supposed..
+  }
+}
+</SCRIPT>
+</BODY></HTML>
